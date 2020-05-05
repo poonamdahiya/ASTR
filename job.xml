@@ -1,0 +1,20 @@
+<job concurrent_runs="10">
+	<load>configurations-rebrand.xml</load>
+	<batch name="Test_Production_Prospa">
+		<test appname="Test_ProdProsp_Sitemap" >
+			<configurations names="perfecto" />
+
+			<SmartSplit to="sitemap url groups" max="50" path="Sitemap.xml" />
+			<execute>
+				<action type="crawl" from="sitemap.xml file" createSeparateTests="true" path="Sitemap.xml" >
+					<foreach>
+						<action type="function-addPrefix" prefix="" to="exp[%url%]" OutputVariable="fullURL" />
+						<action type="navigate">exp[%fullURL%]</action>
+
+						<action type="checkWindow" ignoreDisplacementDiffs="true" testName="exp[%url%]">exp[%url%]</action>
+					</foreach>
+				</action>
+			</execute>
+		</test>
+	</batch>
+</job>

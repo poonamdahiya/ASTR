@@ -1,0 +1,12 @@
+<settings>
+	<url>http://hub.browserstack.com/wd/hub</url>
+	<capabilities>
+		<browserName>chrome</browserName>
+		<!-- <browserVersion>latest</browserVersion> -->
+		<os_version>7</os_version>
+    <os>Windows</os>
+    <resolution>1600x1200</resolution>
+    <browserstack.user>poonam142</browserstack.user>
+		<browserstack.key>TiD4DcFhw3LezzUpSCMo</browserstack.key>
+</capabilities>
+</settings>

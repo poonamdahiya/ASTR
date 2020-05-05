@@ -1,0 +1,15 @@
+<definitions>
+	<!-- <configurationGroup groupName="rebrand-configuration" configurationsNames="WindowsLocalGrid,MacOSLocalGrid" />	 -->
+	<configuration name="perfecto">
+		<applitools>applitoolsConf_windows.xml</applitools>
+		<driver forceRemoteDriver="true">Perfecto.xml</driver>
+		<viewport width="1200" height="600"></viewport>
+	</configuration>
+
+	<configuration name="browserstack">
+		<applitools>applitoolsConf_windows.xml</applitools>
+		<driver forceRemoteDriver="true">Browserstack.xml</driver>
+		<viewport width="1200" height="600"></viewport>
+	</configuration>
+
+</definitions>
