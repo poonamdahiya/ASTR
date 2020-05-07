@@ -2,7 +2,7 @@
 	<load>configurations-rebrand.xml</load>
 	<batch name="MyTestBatch">
 		<test appname="MyTestApp" >
-			<configurations names="Local" />
+			<configurations names="browserstack" />
 
 			<SmartSplit to="sitemap url groups" max="50" path="Sitemap.xml" />
 			<execute>
