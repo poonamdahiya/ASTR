@@ -12,4 +12,10 @@
 		<viewport width="1200" height="600"></viewport>
 	</configuration>
 
+	<configuration name="Local">
+		<applitools>applitoolsConf_windows.xml</applitools>
+		<driver>chromedriver</driver>
+		<viewport width="1200" height="600"></viewport>
+	</configuration>
+
 </definitions>

@@ -1,8 +1,8 @@
 <job concurrent_runs="10">
 	<load>configurations-rebrand.xml</load>
-	<batch name="Test_Production_Prospa">
-		<test appname="Test_ProdProsp_Sitemap" >
-			<configurations names="perfecto" />
+	<batch name="MyTestBatch">
+		<test appname="MyTestApp" >
+			<configurations names="Local" />
 
 			<SmartSplit to="sitemap url groups" max="50" path="Sitemap.xml" />
 			<execute>
