@@ -5,17 +5,14 @@
 		<driver forceRemoteDriver="true">Perfecto.xml</driver>
 		<viewport width="1200" height="600"></viewport>
 	</configuration>
-
 	<configuration name="browserstack">
 		<applitools>applitoolsConf_windows.xml</applitools>
 		<driver forceRemoteDriver="true">Browserstack.xml</driver>
 		<viewport width="1200" height="600"></viewport>
 	</configuration>
-
 	<configuration name="Local">
 		<applitools>applitoolsConf_windows.xml</applitools>
-		<driver>chromedriver</driver>
+		<driver>chrome</driver>
 		<viewport width="1200" height="600"></viewport>
 	</configuration>
-
 </definitions>
