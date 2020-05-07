@@ -2,9 +2,9 @@
 	<load>configurations-rebrand.xml</load>
 	<batch name="MyTestBatch">
 		<test appname="MyTestApp" >
-			<configurations names="browserstack" />
+			<configurations names="Local" />
 
-			<SmartSplit to="sitemap url groups" max="50" path="Sitemap.xml" />
+			<SmartSplit to="sitemap url groups" max="1" path="Sitemap.xml" />
 			<execute>
 				<action type="crawl" from="sitemap.xml file" createSeparateTests="true" path="Sitemap.xml" >
 					<foreach>
