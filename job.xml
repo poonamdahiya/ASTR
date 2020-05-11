@@ -1,6 +1,6 @@
 <job concurrent_runs="10">
 	<load>configurations-rebrand.xml</load>
-	<batch name="MyTestBatch">
+	<batch name="MyNewTestBatch">
 		<test appname="MyTestApp" >
 			<configurations names="Local" />
 			<SmartSplit to="sitemap url groups" max="1" path="Sitemap.xml" />
